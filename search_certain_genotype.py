@@ -1,5 +1,8 @@
-f1 =  open("Snps_Candidates.Genmod.WES.genotypes", "r")
-f2 = open("Snps_Canditates_Genmod.WES.genotypes.carriers", "w")
+
+import sys,os,re
+
+f1 =  open(sys.argv[1], "r")
+f2 = open(sys.argv[2], "w")
 
 while True:
     line = f1.readline()
