@@ -10,7 +10,7 @@ while True:
         break
     info = line.split()
     for i in range(5, len(info)):
-        if info[2]+"/"+info[2] in info[i].split(":",1)[1] and len(info[i].split(":",1)[1]) <= 3:
+        if info[2]+"/"+info[2] == info[i].split(":",1)[1] and len(info[i].split(":",1)[1]) <= 3:
             out1 = info[2]+"/"+info[2],info[i]
             #print type(info[2]+"/"+info[2])
         else:
